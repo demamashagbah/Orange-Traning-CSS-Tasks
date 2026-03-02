@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Final</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #82d1b3 0%, #4ca393 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: white;
+            width: 380px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d6a61;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-style {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #050505;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+        }
+
+        .show-password {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 13px;
+            color: #666;
+            margin: -5px 0 25px 0;
+        }
+
+        .show-password input {
+            margin-right: 8px;
+            width: auto;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .btn-signin {
+            background-color: #00897b;
+            color: white;
+            padding: 12px 35px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+
+        .footer-links {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #00897b;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h1>Login</h1>
+        
+        <form action="#">
+            <div class="input-group">
+                <input class="input-style" type="email" placeholder="Email">
+            </div>
+            
+            <div class="input-group">
+                <input class="input-style" type="password" placeholder="Password">
+            </div>
+
+            <div class="show-password">
+                <input type="checkbox" id="show">
+                <label for="show">Show Password</label>
+            </div>
+
+            <div class="button-group">
+                <input class="btn-signin" type="submit" value="SIGN IN">
+            </div>
+        </form>
+
+        <div class="footer-links">
+            <div>Forgot <span style="cursor:pointer">Username / Password?</span></div>
+            <div>Don't have an account? <span style="font-weight:bold; cursor:pointer">Sign up</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

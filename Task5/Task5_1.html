@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #12 - Floating Articles</title>
+    <style>
+       
+        body {
+            background-color: #ff66ff; 
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+
+        article {
+            background-color: #f0f0f0;
+            width: 250px;
+            height: 150px;
+            padding: 8px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            float: left;
+            font-size: 15px;
+            line-height: 1.2;
+            border: 1px solid #ccc; 
+        }
+
+        .middle-bar {
+            clear: both; 
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: #ff66ff;
+            padding: 5px;
+            margin: 10px 0 20px 0;
+            width: 95%;
+            height: 45px;
+            overflow-y: scroll; 
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Floating Articles</h2>
+
+    <div class="container">
+        <article>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum purus a justo pellentesque, quis varius arcu scelerisque. Nam porta odio et orci placerat.
+        </article>
+        <article>
+            Fusce molestie, ipsum id interdum commodo, mauris dui sagittis lorem, sit amet aliquet dui nisl dapibus augue. Maecenas auctor eros sit amet ante molestie, id ultrices nunc.
+        </article>
+        <article>
+            Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia. Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor nisl, sit amet ultricies nisl est.
+        </article>
+    </div>
+
+    <div class="middle-bar">
+        Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel est vel nulla euismod pretium eu aliquet diam. Nulla ac auctor ante, volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida, facilisis risus. Nunc augue sem, molestie ac congue at, auctor sit amet turpis. Nulla egestas ullamcorper auctor.
+    </div>
+
+    <div class="container">
+        <article>
+            Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum quam molestie quis. Mauris nunc felis, sagittis vel massa id, sodales congue purus.
+        </article>
+        <article>
+            Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia. Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor nisl, sit amet ultricies nisl est.
+        </article>
+    </div>
+
+</body>
+</html>

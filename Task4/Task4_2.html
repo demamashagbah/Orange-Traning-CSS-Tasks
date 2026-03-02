@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithRandom Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #a0c4ff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-card {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4a6fa5;
+            margin: 0 0 5px 0;
+            font-size: 26px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            color: #6a7c92;
+            font-size: 13px;
+            margin-bottom: 6px;
+            margin-left: 2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0e6ed;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #333;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #4da3ff;
+            box-shadow: 0 0 5px rgba(77, 163, 255, 0.2);
+        }
+
+        .register-btn {
+            background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h1>CODEWITHRANDOM</h1>
+        <p class="subtitle">Thank you for Being with me</p>
+        
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="repeat-password">Repeat password</label>
+                <input type="password" id="repeat-password" required>
+            </div>
+            
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

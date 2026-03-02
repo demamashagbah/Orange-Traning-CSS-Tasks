@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #9c00e6; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+        .login-container {
+            background-color: white;
+            width: 800px; 
+            display: flex; 
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            padding: 50px;
+        }
+
+      
+        .image-side {
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-side img {
+            max-width: 80%;
+            height: auto;
+        }
+
+       
+        .form-side {
+            flex: 1; 
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+       
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 15px 15px 45px; 
+            border: none;
+            background-color: #e6e6e6;
+            border-radius: 30px;
+            font-size: 16px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Button Styling */
+        .btn-login {
+            background-color: #26d33f; 
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 400px;
+           
+        }
+
+       
+        /* Footer links */
+        .footer-links {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-links a {
+            color: #26d33f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="image-side">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAxlBMVEX///8ALzMAKC8AJyxlenhHYWMCLTEAKzH8/v0BLzEAKS0AHBoAHR/g5+f//f8AFx3Dzc5ddnYiP0KxvbuSpKauu70AICEAIycAAAAAGhyBkZWcqKiRmp6KmJt1jI+7xMamsbIAICXX3+JQZ2lFZGNpfoKapKcAFyEAIx8AEhrp8fGqtLgAFgw9WlsGLzgAEBHN2dowUFFLXWMQNzgAHStdcHcWOD6LoKEADxxpgoB/kpL8/PT/+frx+/l+lo7i7uiasKoAABT1aFdlAAAD5klEQVR4nO3cfVfaMBgF8KRomtTaCgKluIEFQV4EZc6pU7f5/b/UAnrO5hELTfNQ1Pvznx1d+3i5gfJyDGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQkyxW0fHJkSeUrNPsnuwWpXdIn7B/mnglz5TjVwY5Dvei4e4ooA05PhPcnAhrrBPlOAHn/oQFlAEld6eKC2WG8/OHOzYxPXx+AsGHh4T5AnYRcq64coUR16lXZTsxPnqqO1RJizThgU4oVLJnKPYbccM3PTiMxTxhmTAhe0oY9feLMZp4XDk7hPmeOuQ+5T0h1W6J84iyw+dVWlBCfZWYJ3ToExbV4eYSokOy6ejQxgx0SAoJrczAKiWFDq3MQIek0KGVGeiQFDq0MgMdkkKHVmagQ1Lo0MoMdEgKHVqZgQ5JoUMrM9AhKXRoZcYnSYhVSjYdHdqYgQ5JoUMrM9AhKXRoZQY6JIUOrcxAh6TQoZUZ6JAUOrQyAx2SQodWZqBDUujQyoxPkhCrlGw6OrQxAx2SQodWZnySDj9+wqlfI5yR6mRDCdWsmC0jvu1e8s2sUiGcQojSfFMF0r9W1wnjxdYGxpsiWOARJxy6BXO+X9Em5JWi/bglTCjvCU+egaTb3eTh+ssyX19qPlv2vRSttfR6vTbd/i2yexMtk/yz9OdP/+WtH62h9Gzxz6R+QLOXkl6h3WT5vjrZLTt07U14hHdBElHqgHn2F7JHqEGHImIwD7glEV3PesSAyXKyJfm40k/dLnVEqxkl2/G3JN+C612OArsR5w1uU0ThXI7sLdQgmAfcNqXZyNqlXwY9v+g8S9QnI2tX/tstuUy8MOXRRNpYqME964Xmj6IiTBVnudK/kkwCeZc7o2St2Py38LqHtVQzZR5QL9RyYOERtRVOjX8LwfdXnL0T5ujQVXvlvPtEzpeoMr+Zo5/sbsWEXsk8oeb38r2Y0kv03Hy64Df7Kx8KFu/8mJsOWixXja3hlLum60iIq1W3b3D/UM+X0A1/GT+g6rtw6zTPA4FI2qt2xdU3QDffMuXq5lq3aLRQJWvG+YYPf68xpplvx1b9LPysb/os/GfoLPZEffri/71e5ctetL56maucWXWlVrQ43fqBXr+Ec2/+sOzvIOlnC83GYFDPwH8tbKwWv6SPijNrHGXvULKL62r1qN8/SnWcZjwep1/ua7V2qoP1mST86AJWK++8H+Vjg4y1x9K74Txm/8BP3stZpAzeJ9w8pVSpYnSv6lTCYj5Fy0h4YWXVE/w3jKrFfBKaVfd6ZBaQdnd3qyTxXvsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwnvwF/WTRjhMZjGMAAAAASUVORK5CYII=" alt="Laptop Graphic">
+        </div>
+
+        <div class="form-side">
+            <h1>Member Login</h1>
+            
+            <form action="#">
+                <div class="input-group">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="••••••">
+                </div>
+                <div style="display: flex; justify-content: center;";>
+                     <button type="submit" class="btn-login">Login</button>
+                </div>
+               
+            </form>
+
+            <div class="footer-links">
+                <p>Forgot <a href="#">Username / Password?</a></p>
+                <p><a href="#">Create your account →</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
