@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login_3 </title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, sans-serif; 
+                background: linear-gradient(135deg, #82d1b3 0%, #4ca393 100%);
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-box{
+                width: 360px; 
+                border-radius:8;
+                background:white ;
+                width: 320px;
+            }
+            .main-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+            }
+            h1 {
+            font-size: 32px;
+            font-weight: 400;
+            margin: 0 0 8px 0;
+            color:rgb(3, 112, 116);
+        }
+        .input{
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #666;
+            margin-top:20px ;
+        }
+        .show-password {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .show-password input {
+            margin-right: 8px;
+        }
+
+        .btn-signin {
+            background-color: #00796b; /* Dark teal */
+            color: white;
+            width: 120px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer-links {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #00796b;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <div class="main-content">
+                <div>
+                    <h1>Login</h1>
+                </div>
+               <form action="www.example.com" method="post">
+                <div>
+                    <input class="input" type="Email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input class="input" type="password" name="password" placeholder="password">
+                </div>
+                <div class="show-password">
+                    <input type="checkbox" id="show">
+                    <label for="show">Show Password</label>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <input  class="btn-signin" type="submit" value="Signin">
+                </div>
+                
+               </form> 
+               <div class="footer-links">
+                    <p>Forgot Username / Password?</p>
+                    <p>Don't have an account? Sign up</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
